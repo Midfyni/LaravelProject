@@ -29,3 +29,14 @@ A Laravel application powered by **Laravel**, **Livewire**, and **Vite**.
 ```bash
 git clone https://github.com/<your-username>/<your-repo>.git BlogSystem
 cd BlogSystem
+```
+### 2. Copy the environment file
+- **Windows (PowerShell):**
+```bash
+copy .env.example .env
+```
+### 3. Configure SQLite in .env
+```bash
+DB_CONNECTION=sqlite
+DB_DATABASE=${APP_STORAGE}/database/database.sqlite
+```
