@@ -38,5 +38,40 @@ copy .env.example .env
 ### 3. Configure SQLite in .env
 ```bash
 DB_CONNECTION=sqlite
-DB_DATABASE=${APP_STORAGE}/database/database.sqlite
+```
+
+### 4. Create SQLite database file
+- ** Windows (cmd):**
+```bash
+type nul > database/database.sqlite
+```
+
+### 5. Install PHP dependencies
+```bash
+composer install
+```
+
+### 6. Generate Application Key
+```bash
+php artisan key:generate
+```
+
+### 7. Run migrations
+```bash
+php artisan migrate
+```
+
+### 8. Install JavaScript dependencies
+```bash
+npm install
+```
+
+### 9. Run Vite (development)
+```bash
+npm run dev
+```
+
+### 10. Start Laravel server
+```bash
+php artisan serve
 ```
