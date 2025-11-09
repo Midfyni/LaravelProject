@@ -28,7 +28,7 @@ jobs:
         run: composer install --prefer-dist --no-progress --no-interaction
 
       - name: Generate app key
-        run: php artisan key:generate
+        run: php artisan key:generate --force
 
       - name: Create SQLite database
         run: |
