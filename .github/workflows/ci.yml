@@ -21,14 +21,14 @@ jobs:
           extensions: mbstring, bcmath, pdo_sqlite, dom
           coverage: none
 
-      - name: Copy .env
-        run: cp .env.example .env
+      - name: Copy .env.testing
+        run: cp .env.example .env.testing
 
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-interaction
 
       - name: Generate app key
-        run: php artisan key:generate --force
+        run: php artisan key:generate --env=testing --force
 
       - name: Create SQLite database
         run: |
