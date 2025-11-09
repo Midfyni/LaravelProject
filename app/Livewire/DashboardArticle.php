@@ -15,9 +15,7 @@ class DashboardArticle extends Component
     public $judul, $isi, $selectedCategory, $articleId;
 
     // public $selectedArticles = [];
-    public $selectAll = false;
     public $selectedArticles = [];
-    public $article;
 
     public $showEditModal = false;
 
@@ -25,9 +23,6 @@ class DashboardArticle extends Component
 
     // public $categories = [];
     public $search = '';
-
-    // optional: keep search in query string
-    protected $queryString = ['search'];
 
     // reset pagination when search changes
     public function updatingSearch()

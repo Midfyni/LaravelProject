@@ -17,9 +17,11 @@ class CategoryFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
             'name' => fake()->word(),
             'slug' => Str::slug(fake()->sentence()),
+            'color' => fake()->safeColorName(), // e.g. "blue", "green", "salmon"
         ];
     }
 }

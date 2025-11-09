@@ -180,7 +180,7 @@
                             @endforelse
                         </tbody>
                     </table>
-                    <pre>{{ var_export($selectedArticles) }}</pre>
+                    {{-- <pre>{{ var_export($selectedArticles) }}</pre> --}}
                 </div>
 
                 <div class="py-3 px-3">

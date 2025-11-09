@@ -38,7 +38,6 @@ class EditArticleModal extends Component
 
     public function updateArticle()
     {
-        dd('executed');
         $this->validate([
             'judul' => 'required|string|max:255',
             'isi' => 'required|string',
