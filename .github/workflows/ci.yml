@@ -1,4 +1,4 @@
-name: Code Integration
+name: Laravel CI
 
 on:
   push:
@@ -24,11 +24,11 @@ jobs:
       - name: Copy .env
         run: cp .env.example .env
 
-      - name: Generate app key
-        run: php artisan key:generate
-
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-interaction
+
+      - name: Generate app key
+        run: php artisan key:generate
 
       - name: Create SQLite database
         run: |
