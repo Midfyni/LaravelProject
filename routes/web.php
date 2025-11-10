@@ -3,7 +3,7 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\penulisController;
+use App\Http\Controllers\PenulisController;
 use App\Models\User;
 use App\Models\Article;
 use App\Models\Category;
